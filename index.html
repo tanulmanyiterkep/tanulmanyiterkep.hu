@@ -9,20 +9,15 @@
 </head>
 <body>
 
-
-
 <style>
-
 
 /* atomic */
 section h2 {
     color: gray;
 }
-
 .main-image {
     transform: rotate(-3deg);
 }
-
 h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -34,16 +29,11 @@ h1 {
 h2 {
     color: green;
 }
-
 /* layout */
 body {
     display: flex;
     flex-direction: column;
     background-color: #f7f7f7;
-}
-
-header, main, footer {
-
 }
 
 header {
@@ -54,7 +44,6 @@ header {
     display: flex;
     gap: 2rem;
 }
-
 header img {
     max-width: 30vw;
     margin-left: 1rem;
@@ -63,11 +52,9 @@ header img {
 }
 
 main {
-    padding: 5vw;
+    padding: 1rem;
 }
-
 section {
-
     /* flex */
     display: flex;
     flex-wrap: wrap;
@@ -76,18 +63,16 @@ section {
 	align-content: stretch;
 
     margin: 2vw 3vw 3vw 3vw;
-    padding: 2vw;
+    padding: 1rem;
 
     border-radius: 1rem;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
-
 #text1 {
     box-shadow: none;
     background-color: transparent;
 }
-
 section img {
     max-width: 50%;
 }
@@ -97,17 +82,9 @@ section:nth-child(odd) {
     flex-direction: row;
     flex-shrink: 1;
 }
-
 section:nth-child(even) {
     flex-direction: row-reverse;
     flex-shrink: 1;
-}
-
-section img {
-   
-}
-.question {
-
 }
 
 .question p {
@@ -322,16 +299,6 @@ p.act {
 <p>• az előhívási technikával megtanulod az emlékezetedből elővenni a tanultakat.</p>
 </div>
 
-
-
-
-
-
-
-
-
-
-
 <!-- 4 -->
 <section id="text4mail">
     <img src="./content/tanfolyam.svg" alt="">
@@ -340,7 +307,6 @@ p.act {
     <a class="cta" href="mailto:tanulmanyiterkep@gmail.com">Itt tudsz jelentkezni</a>
     </div>
 </section>
-
 
 <!-- 4 -->
 <section id="text4face">
@@ -409,7 +375,7 @@ p.act {
 }
 .zorro {
     background-color: none; !important
-    max-width: 60%;
+    max-width: 50%;
 }
 .moretext {
     margin: 3rem;
@@ -435,22 +401,6 @@ p.act {
         <p><br/>Csatlakozz Facebook-oldalunkhoz!</p>
         <a class="cta" href="https://www.facebook.com/profile.php?id=61566942534041">csatlakozom</a>    </div>
 
-<!-- 6 
-<div class="moretext">
-    <p>Itt szereztem szakmai tapasztalataimat: általános- és középiskolában tanárként, tanárképzésben tanításmódszertan oktatóként, egyetemi oktatóként curriculum- és tananyagfejlesztőként, tanulásmódszertani projektek vezetőjeként és kidolgozójaként.</p>
-     
-    <h3>Ma ebben hasznosítom őket:</h3>
-    <p>• trénerként tanulásmódszertani, pályaorientációs és önismereti tréningeken</p>
-    <p>• segítőként döntéshozásban: diákoknak és szüleiknek segítek továbbtanulásról döntést hozni (középiskola választás, egyetemi tanulmányok, szakma választás)</p>
-    <p>• mentorként tanulásban, érettségire tudatos felkészülésben</p>
-    <br/>
-    <p>Itt érsz el: </p>
-    <a class="cta" href="mailto: tanulmanyiterkep@gmail.com">tanulmanyiterkep@gmail.com</a>
-
-    <p><br/>Csatlakozz Facebook-oldalunkhoz!</p>
-    <a class="cta" href="https://www.facebook.com/profile.php?id=61566942534041">csatlakozom</a>
-</div>
--->
 </div>
 </section>
 
@@ -488,7 +438,7 @@ p.act {
 
 }
 .zorro p {
-    max-width: 76ch;
+    max-width: 56ch;
 
 }
 .sign {
@@ -515,25 +465,21 @@ p.act {
 <style>
 footer {
     display: flex;
+    flex-wrap: wrap;
     gap: 6rem;
     background-color: gray;
     padding: 6rem;
     color: white
 }
-
 footer a {
     color: white;
 }
-
 footer * {
     flex: 1 1 1;
 }
-
 .logo {
     max-width: 12rem;
 }
-
-
 </style>
 
     <img class="logo" src="./content/logo-feher.svg" alt="" />
