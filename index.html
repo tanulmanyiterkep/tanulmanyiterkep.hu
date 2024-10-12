@@ -19,7 +19,7 @@ section h2 {
     color: gray;
 }
 
-.rotated {
+.main-image {
     transform: rotate(-3deg);
 }
 
@@ -103,25 +103,20 @@ section:nth-child(even) {
     flex-shrink: 1;
 }
 
-
-
-
 section img {
    
 }
-
 .question {
 
 }
 
 .question p {
-    margin: 1rem;
-    padding: 2rem 3rem 2rem 3rem;
+    margin: 0.5rem;
+    padding: 1rem 2rem 1rem 2rem;
     border-radius: 0.2rem;
     background-color: #f4f597ed;
 
 }
-
 .question p:nth-child(1) {
     background-color: #fb860078;
     transform: rotate(4deg) skew(1deg, 1deg);
@@ -129,20 +124,17 @@ section img {
     margin-left: 3rem;
     margin-top: 1rem;
 }
-
 .question p:nth-child(2) {
     background-color: #faedcd;
     transform: rotate(2deg) skew(-1deg, -1deg);
     max-width: 53ch;
     margin-left: -2rem;
 }
-
 .question p:nth-child(3) {
     margin-left: 4rem;
     transform: rotate(-3deg) skew(-1deg, -1deg);
     max-width: 43ch;
 }
-
 .question p:nth-child(4) {
     background-color: #f5d5b2;
     margin-left: -2rem;
@@ -162,8 +154,6 @@ section img {
     margin-left: 1rem;
     margin-top: 1rem;
 }
-
-
 .question p:nth-child(7) {
     background-color: #f0ddaf;
     transform: rotate(2deg) skew(-1deg, -1deg);
@@ -211,21 +201,6 @@ p.act {
     text-decoration: none;
 }
 
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </style>
 
 
@@ -234,16 +209,16 @@ p.act {
 <header id="header">
 <style>
     main-text {
-        max-width: 36ch;
+        width: 100%;
         margin-bottom: 2rem;
         font-size: 5rem;
     }
 </style>
     <section id="text1">
         <h1>ÜDVÖZÖLLEK A TANULMÁNYI TÉRKÉP OLDALON!</h1>
-        <p class="main-text">Ez az oldal arról szól, hogyan jutsz el a hivatásodhoz vagy egy új munkához, és milyen mérföldköveket érintesz közben. 
-            Ilyen mérföldkövek LEHETNEK:</p>
-        <img class="rotated" src="./content/emberke-nagy.png" alt="" />
+        <h3 class="main-text">Ez az oldal arról szól, hogyan jutsz el a hivatásodhoz vagy egy új munkához, és milyen mérföldköveket érintesz közben. 
+            Ilyen mérföldkövek LEHETNEK:</h3>
+        <img class="main-image" src="./content/emberke-nagy.png" alt="" />
 
         <div class="question">
             <p>középiskolát választani,</p>
@@ -297,11 +272,8 @@ p.act {
             padding: 1rem;
         }
         .ad a {
-            padding: 2rem;
-            background-color: #08ab1b;
             color: white;
             text-decoration: none;
-            border-radius: 2rem;
             font-weight: 900;
             font-size: 1.2rem;
         }
@@ -437,7 +409,7 @@ p.act {
 }
 .zorro {
     background-color: none; !important
-    width: 70%;
+    max-width: 60%;
 }
 .moretext {
     margin: 3rem;
@@ -452,7 +424,6 @@ p.act {
 
     <div class="card zorro">
         <p>Itt szereztem szakmai tapasztalataimat: általános- és középiskolában tanárként, tanárképzésben tanításmódszertan oktatóként, egyetemi oktatóként curriculum- és tananyagfejlesztőként, tanulásmódszertani projektek vezetőjeként és kidolgozójaként.</p>
-     
         <h3>Ma ebben hasznosítom őket:</h3>
         <p>• trénerként tanulásmódszertani, pályaorientációs és önismereti tréningeken</p>
         <p>• segítőként döntéshozásban: diákoknak és szüleiknek segítek továbbtanulásról döntést hozni (középiskola választás, egyetemi tanulmányok, szakma választás)</p>
