@@ -60,7 +60,8 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 	align-items: center;
-	align-content: stretch;
+
+    max-width: 95vw;
 
     margin: 2vw 3vw 3vw 3vw;
     padding: 1rem;
@@ -114,7 +115,7 @@ section:nth-child(even) {
 }
 .question p:nth-child(4) {
     background-color: #f5d5b2;
-    margin-left: -2rem;
+    margin-left: 0rem;
     transform: rotate(1deg) skew(1deg, -1deg);
     max-width: 23ch;
 }
@@ -156,12 +157,12 @@ p.act {
 }
 */
 .cta {
-    padding: 1rem 4rem 1rem 4rem;
+    padding: 1rem 2rem 1rem 2rem;
 
     border-radius: 99rem;
     
     display: inline-block;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -322,6 +323,16 @@ p.act {
 
 
 
+
+
+
+
+
+
+
+
+
+
 <!-- 5 -->
 <section id="about-me">
 <style>
@@ -375,7 +386,11 @@ p.act {
 }
 .zorro {
     background-color: none; !important
-    max-width: 50%;
+    /* max-width: 50%; */
+    padding: 1rem;
+}
+.zorro p {
+    max-width: 90vw;
 }
 .moretext {
     margin: 3rem;
@@ -388,7 +403,7 @@ p.act {
         <p>Herr Judit – Tanulásmódszertani, továbbtanulási és pályaorientációs tanácsadó, mentálhigiénés szakember</p>
     </div>
 
-    <div class="card zorro">
+    <div class="card">
         <p>Itt szereztem szakmai tapasztalataimat: általános- és középiskolában tanárként, tanárképzésben tanításmódszertan oktatóként, egyetemi oktatóként curriculum- és tananyagfejlesztőként, tanulásmódszertani projektek vezetőjeként és kidolgozójaként.</p>
         <h3>Ma ebben hasznosítom őket:</h3>
         <p>• trénerként tanulásmódszertani, pályaorientációs és önismereti tréningeken</p>
@@ -433,14 +448,20 @@ p.act {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
 }
+
+card {
+    max-width: 90vw;
+}
+
 .card p {
     max-width: 36ch;
-
 }
+/*
 .zorro p {
     max-width: 56ch;
 
 }
+    */
 .sign {
     text-align: right;
     font-style: oblique;
