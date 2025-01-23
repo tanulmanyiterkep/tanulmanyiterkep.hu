@@ -193,7 +193,13 @@ h3 {
 
 
 #stones {
-    text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    gap: 0rem;
 }
 .stones {
     width: 16vw;
