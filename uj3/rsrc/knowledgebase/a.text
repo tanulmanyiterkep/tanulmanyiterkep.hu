@@ -1,0 +1,61 @@
+The flickering issue with `border-radius` in Safari is a well-known problem, especially on older versions of Safari and when using certain CSS properties together. Here are a few potential workarounds to fix the flickering:
+
+### 1. **Use `will-change: transform`**
+Adding `will-change: transform` can help improve rendering and prevent flickering. Safari might not properly handle border-radius rendering unless this hint is provided.
+
+```css
+.element {
+  border-radius: 10px;
+  will-change: transform;
+}
+```
+
+### 2. **Apply `transform` property**
+Sometimes adding a slight `transform` (e.g., `scale(1)`) helps to "force" Safari to render the element correctly, as it re-renders the element's box model when a `transform` is applied.
+
+```css
+.element {
+  border-radius: 10px;
+  transform: translateZ(0); /* or scale(1) */
+}
+```
+
+### 3. **Use `backface-visibility: hidden`**
+This can also help with rendering issues related to `border-radius` in Safari.
+
+```css
+.element {
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+```
+
+### 4. **Try Adding `overflow: hidden`**
+Sometimes, if the child content overflows the border radius, it can cause flickering. You can try adding `overflow: hidden` to prevent any content from overflowing the rounded corners.
+
+```css
+.element {
+  border-radius: 10px;
+  overflow: hidden;
+}
+```
+
+### 5. **Check for `position` and `z-index` Issues**
+Flickering can sometimes be a result of stacking context issues. If you're using `position: absolute` or `position: fixed` with `z-index`, make sure the stacking context is set properly and no element is interfering with the render.
+
+### 6. **Use Hardware Acceleration (GPU)**
+In some cases, forcing hardware acceleration might resolve flickering. This can be done using `transform: translate3d(0,0,0)` or `translateZ(0)`.
+
+```css
+.element {
+  border-radius: 10px;
+  transform: translate3d(0, 0, 0);
+}
+```
+
+### 7. **Ensure You're Using Latest Safari Version**
+Make sure you're testing with the latest version of Safari, as newer versions tend to have improved handling of CSS properties, including `border-radius`.
+
+---
+
+By combining one or more of these approaches, you should be able to reduce or eliminate the flickering. If you're still having issues, let me know, and we can troubleshoot further!
