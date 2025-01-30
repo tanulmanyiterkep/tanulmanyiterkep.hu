@@ -1,0 +1,1 @@
+# tanulmanyiterkep.hu

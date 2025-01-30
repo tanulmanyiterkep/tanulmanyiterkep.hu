@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanulmányitérkép</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+</head>
+<body>
+
+<style>
+
+/* atomic */
+section h2 {
+    color: gray;
+}
+.main-image {
+    transform: rotate(-3deg);
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: rgb(54, 157, 226);
+}
+h2 {
+    color: green;
+}
+/* layout */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: rgb(211, 228, 227);
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+header img {
+    max-width: 30vw;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+section {
+    /* flex */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+
+    max-width: 95vw;
+
+    margin: 2vw 3vw 3vw 3vw;
+    padding: 1rem;
+
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+#text1 {
+    box-shadow: none;
+    background-color: transparent;
+}
+section img {
+    max-width: 50%;
+}
+
+/* content elements / sections */
+section:nth-child(odd) {
+    flex-direction: row;
+    flex-shrink: 1;
+}
+section:nth-child(even) {
+    flex-direction: row-reverse;
+    flex-shrink: 1;
+}
+
+.question p {
+    margin: 0.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 0.2rem;
+    background-color: #f4f597ed;
+
+}
+.question p:nth-child(1) {
+    background-color: #fb860078;
+    transform: rotate(4deg) skew(1deg, 1deg);
+    max-width: 33ch;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.question p:nth-child(2) {
+    background-color: #faedcd;
+    transform: rotate(2deg) skew(-1deg, -1deg);
+    max-width: 53ch;
+    margin-left: -2rem;
+}
+.question p:nth-child(3) {
+    margin-left: 4rem;
+    transform: rotate(-3deg) skew(-1deg, -1deg);
+    max-width: 43ch;
+}
+.question p:nth-child(4) {
+    background-color: #f5d5b2;
+    margin-left: 0rem;
+    transform: rotate(1deg) skew(1deg, -1deg);
+    max-width: 23ch;
+}
+.question p:nth-child(5) {
+    background-color: #cdfaeb;
+    margin-left: 3rem;
+    transform: rotate(-3deg) skew(-1deg, -1deg);
+    max-width: 27ch;
+}
+.question p:nth-child(6) {
+    background-color: #cdfada;
+    transform: rotate(4deg) skew(1deg, 1deg);
+    max-width: 43ch;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.question p:nth-child(7) {
+    background-color: #f0ddaf;
+    transform: rotate(2deg) skew(-1deg, -1deg);
+    max-width: 33ch;
+    margin-left: -2rem;
+}
+
+
+/* tipo */
+body {
+    font-family: "Lucida Grande", Tahoma;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+
+
+
+/*
+p.act {
+    background-color: blue;
+    transform: skew(9deg, -1deg);
+}
+*/
+.cta {
+    padding: 1rem 2rem 1rem 2rem;
+
+    border-radius: 99rem;
+    
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+    background-image: linear-gradient(to right, #9ac402ed 0%, #08ab1b  51%, #2b9d8f  100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+
+}
+
+.cta:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+</style>
+
+
+
+
+<header id="header">
+<style>
+    main-text {
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 5rem;
+    }
+</style>
+    <section id="text1">
+        <h1>ÜDVÖZÖLLEK A TANULMÁNYI TÉRKÉP OLDALON!</h1>
+        <h3 class="main-text">Ez az oldal arról szól, hogyan jutsz el a hivatásodhoz vagy egy új munkához, és milyen mérföldköveket érintesz közben. 
+            Ilyen mérföldkövek LEHETNEK:</h3>
+        <img class="main-image" src="./content/emberke-nagy.png" alt="" />
+
+        <div class="question">
+            <p>középiskolát választani,</p>
+            <p>középsuliban fakultációt vagy szakirányt választani</p>
+            <p>szakképesítést megszerezni</p>
+            <p>érettségit letenni</p>
+            <p>érettségire épülő szakmát választani és megszerezni</p>
+            <p>egyetemen, főiskolán továbbtanulni és lediplomázni</p>
+            <p>szakirányt, szakterületet, munkahelyet váltani</p>
+    
+        </div>
+    </section>
+
+</header>
+
+<main>
+
+
+<div class="ad">
+    <style>
+        .ad {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background-color: #e8e7e0;
+            border-radius: 1rem 1rem 0 0;
+
+            text-align: center;
+        }
+        .ad h2 {
+            max-width: 36ch;
+            margin-bottom: 3rem;
+        }
+        .ad img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 2rem;
+        }
+
+.ad img {transition: .3s ease all; width: 100%; object-fit:cover;}
+
+.ad:hover img {
+  transform: scale(1.05);
+}
+
+        .ad p {
+            max-width: 36ch;
+            text-align: center;
+            padding: 1rem;
+        }
+        .ad a {
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+        .ad img:hover {
+            
+        }
+        .ad h3 {
+            color: green;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    <h2>A TANULMÁNYI TÉRKÉP oldal segít Neked hatékonyabbá tenni a tanulásodat, hogy a mérföldköveidet sikeresen léphesd meg.</h2>
+    <h3>Ha ebben a tanévben érettségizel, jelentkezz az alábbi tréningre!</h3>
+    <a href="mailto:tanulmanyiterkep@gmail.com">
+        <img src="./content/tudatos-tanulas.jpg" alt="" />
+    </a>
+
+</div>
+
+
+<div class="description">
+    <style>
+        .description {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            margin: 0;
+            padding: 2rem;
+            background-color: #e8e7e0;
+            border-radius: 0 0 1rem 1rem;
+        }
+    </style>    
+<h2>A tréning tematikája</h2>
+<h3>I. rész A tanulási folyamat megtervezése és beosztása</h3>
+<p>Letisztázzuk a saját tanulási folyamatodat, és ...</p>
+<p>• megismered, milyen lépésekben jutsz el a tananyagtól a tételig, majd a tétel előhívásáig.<br/><br/></p>
+<p>Áttekintjük, hogyan szervezd az idődet az érettségire készülésben. Ez biztonságot ad Neked, mert:</p>
+<p>• meg tudod becsülni, melyik munkafolyamatodhoz mennyi előkészülési és tanulási időre van szükséged;</p>
+<p>• be tudod osztani mikor, melyik tantárgy mely tételeit tanuld;</p>
+<p>• tudod, hol tartasz a tanulásodban és nyomon követed a haladásodat.<br/><br/></p>
+<h3>II. rész A tanulási folyamat megvalósítása</h3>
+<p>• célirányos tanulási technikákat ismersz meg</p>
+<p>• az előhívási technikával megtanulod az emlékezetedből elővenni a tanultakat.</p>
+</div>
+
+<!-- 4 -->
+<section id="text4mail">
+    <img src="./content/tanfolyam.svg" alt="">
+    <div class="question">
+    <p>Ha nem akarod az utolsó pillanatra hagyni a “Hogyan álljak neki?” kérdést, jelentkezz most a tréningre!</p>
+    <a class="cta" href="mailto:tanulmanyiterkep@gmail.com">Itt tudsz jelentkezni</a>
+    </div>
+</section>
+
+<!-- 4 -->
+<section id="text4face">
+    <img src="./content/join.svg" alt="">
+    <div class="question">
+    <p>Olyan, mintha a saját térképeden lépkednél. Ezt a térképet Te formálod: magadnak alakítod az utakat.</p>
+    <p>Csatlakozz Facebook-oldalunkhoz!</p>
+    <a class="cta" href="https://www.facebook.com/profile.php?id=61566942534041">Itt tudsz csatlakozni</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 5 -->
+<section id="about-me">
+<style>
+#about-me {
+    padding: 3rem;
+    background-color: #e8e7e0;
+}
+#about-me h2 {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#about-me > div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: strech;
+    flex-wrap: wrap;
+    gap: 0rem;
+}
+.about-id {
+    background-color: #e8e7e0;
+}
+#about-me .about-id {
+    max-width: 46ch;
+    min-width: min-content;
+    display: block;
+}
+
+#about-me .zorro {
+    background-color: none;
+    box-shadow: none;
+}
+
+#about-me .about-id img {
+    border-radius: 999rem;
+    min-width: 100%;
+    height: auto;
+}
+
+.about-id p {
+    max-width: 36ch;
+    padding: 1rem 0 0 0;
+    display: flex;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.normal {
+    background-color: #08ab1b;
+}
+.zorro {
+    background-color: none; !important
+    /* max-width: 50%; */
+    padding: 1rem;
+}
+.zorro p {
+    max-width: 90vw;
+}
+.moretext {
+    margin: 3rem;
+}
+</style>
+<h2>Segítek megtervezni a saját tanulmányi térképedet, hogy lépésről lépésre, tudatosan és célirányosan elérhesd tanulmányi céljaidat.</h2>
+<div>
+    <div class="card about-id">
+        <img src="./content/herr_judit.jpg" alt="Herr Judit">
+        <p>Herr Judit – Tanulásmódszertani, továbbtanulási és pályaorientációs tanácsadó, mentálhigiénés szakember</p>
+    </div>
+
+    <div class="card">
+        <p>Itt szereztem szakmai tapasztalataimat: általános- és középiskolában tanárként, tanárképzésben tanításmódszertan oktatóként, egyetemi oktatóként curriculum- és tananyagfejlesztőként, tanulásmódszertani projektek vezetőjeként és kidolgozójaként.</p>
+        <h3>Ma ebben hasznosítom őket:</h3>
+        <p>• trénerként tanulásmódszertani, pályaorientációs és önismereti tréningeken</p>
+        <p>• segítőként döntéshozásban: diákoknak és szüleiknek segítek továbbtanulásról döntést hozni (középiskola választás, egyetemi tanulmányok, szakma választás)</p>
+        <p>• mentorként tanulásban, érettségire tudatos felkészülésben</p>
+        <br/>
+        <p>Itt érsz el: </p>
+        <a class="cta" href="mailto: tanulmanyiterkep@gmail.com">tanulmanyiterkep@gmail.com</a>
+    
+        <p><br/>Csatlakozz Facebook-oldalunkhoz!</p>
+        <a class="cta" href="https://www.facebook.com/profile.php?id=61566942534041">csatlakozom</a>    </div>
+
+</div>
+</section>
+
+
+
+
+
+<style>
+#text6 {
+    background-color: transparent;
+    padding: 3rem;
+    box-shadow: none;
+}
+#text6 h2 {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#text6 > div {
+    display: flex;
+    justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+card {
+    max-width: 90vw;
+}
+
+.card p {
+    max-width: 36ch;
+}
+/*
+.zorro p {
+    max-width: 56ch;
+
+}
+    */
+.sign {
+    text-align: right;
+    font-style: oblique;
+    padding: 1rem 1rem 0 0;
+    font-size: 0.9rem;
+}
+</style>
+
+
+
+<!-- 6 -->
+
+
+
+
+
+</main>
+
+
+<footer>
+
+<style>
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    background-color: gray;
+    padding: 6rem;
+    color: white
+}
+footer a {
+    color: white;
+}
+footer * {
+    flex: 1 1 1;
+}
+.logo {
+    max-width: 12rem;
+}
+</style>
+
+    <img class="logo" src="./content/logo-feher.svg" alt="" />
+
+    <ul>
+        <li>
+            <a href="#header">Kezdőoldalra klikk</a>
+        </li>
+        <li>
+            <a href="tanulmanyiterkep.hu">tanulmanyiterkep.hu</a>
+        </li>
+        <li>
+            <a href="mailto: tanulmanyiterkep@gmail.com">Kapcsolat: tanulmanyiterkep@gmail.com</a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=61566942534041">Facebook: Tanulmányi térkép</a>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="./AFSZ.html">ÁSZF</a>
+        </li>
+        <li>
+            <a href="./adatvedelmi-tajekoztatol.html">Adatvédelmi tájékoztató</a>
+        </li>
+        <li>
+            <!-- <a href="./suti.html">SÜTI (COOKIE) SZABÁLYZAT</a> -->
+            
+        </li>
+        <li>
+            <a href="#">Weblap üzemetetője</a>
+        </li>
+    </ul>
+
+</footer>
+
+<div class="note">
+<style>
+    .note {
+        display: fixed;
+        padding: 1rem;
+        font-size: 1rem;
+        background-color: #e8e7e0;
+        display: sticky;
+        bottom: 0px;
+    }
+    
+</style>
+Nem használunk semmilyen sütit.
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
